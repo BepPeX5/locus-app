@@ -1,0 +1,37 @@
+{
+  "name": "Locus - Emotional Geography",
+  "short_name": "Locus",
+  "description": "Discover places as emotional fields",
+  "theme_color": "#000000",
+  "background_color": "#ffffff", 
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Map",
+      "short_name": "Map",
+      "description": "Open the emotional map",
+      "url": "/map",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
