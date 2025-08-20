@@ -1,10 +1,3 @@
-const withPWA = require('next-pwa')({
-  dest: 'public',
-  disable: process.env.NODE_ENV === 'development',
-  register: true,
-  skipWaiting: true,
-});
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
@@ -13,8 +6,14 @@ const nextConfig = {
   images: {
     domains: ['lh3.googleusercontent.com'], // For Google profile images
   },
-  // Enable PWA features
-  ...withPWA({}),
+  typescript: {
+    // Durante il build, ignora alcuni errori TypeScript per deploy veloce
+    ignoreBuildErrors: false,
+  },
+  eslint: {
+    // Durante il build, ignora alcuni errori ESLint per deploy veloce  
+    ignoreDuringBuilds: false,
+  },
 };
 
 module.exports = nextConfig;
