@@ -89,7 +89,6 @@ export function HiddenContent({ h3Index, userLocation }: HiddenContentProps) {
       setIsInArea(true);
       setDwellStartTime(new Date());
     }
-
     return () => {
       setDwellStartTime(null);
       setCurrentDwellMinutes(0);
@@ -208,6 +207,9 @@ export function HiddenContent({ h3Index, userLocation }: HiddenContentProps) {
           </CardHeader>
           <CardContent className="space-y-4">
             {lockedContent.map((item) => (
+              <LockedContentCard 
+                key={item.id} 
+                content={item}
                 currentDwellMinutes={currentDwellMinutes}
                 onAction={handleAction}
                 activeAction={activeAction}
