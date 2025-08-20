@@ -16,6 +16,7 @@ const EMOTION_VALENCE: Record<EmotionType, number> = {
   ANXIETY: -0.5,
 };
 
+
 // Emotion to color mapping (LCH color space for perceptual uniformity)
 const EMOTION_COLORS: Record<EmotionType, { hue: number; chroma: number }> = {
   JOY: { hue: 60, chroma: 80 }, // Bright yellow
