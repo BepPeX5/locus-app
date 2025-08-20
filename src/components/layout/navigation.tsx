@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { signOut, useSession } from 'next-auth/react';
-import { Map, Calendar, Target, Timeline, User, LogOut, Menu, X } from 'lucide-react';
+import { Map, Calendar, Target, Clock, User, LogOut, Menu, X } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -21,7 +21,7 @@ import { cn } from '@/lib/utils';
 
 const navigation = [
   { name: 'Map', href: '/map', icon: Map },
-  { name: 'Timeline', href: '/timeline', icon: Timeline },
+  { name: 'Timeline', href: '/timeline', icon: Clock },
   { name: 'Missions', href: '/missions', icon: Target },
 ];
 
